@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'WildWords';
+  src: url('fonts/CC Wild Words Roman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'WildWords';
+  src: url('fonts/CC Wild Words Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'WildWords';
+  src: url('fonts/CC Wild Words Bold Italic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  height: 100vh;
+  background-color: #FFFFFF;
+  padding: 20px;
+  width: 100%;
+  overflow: hidden; /* dont scroll - only one page */
+  font-family: 'WildWords', Arial, sans-serif;
+
+}
+
+/* header layout */
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.header-image {
+  width: 700px; 
+  height: auto;
+  position: absolute;
+  top: 70px;   
+}
+
+/* content layout - FIXED SIZE */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  width: 1200px; 
+  gap: 40px; 
+  margin-bottom: 20px;
+}
+
+.speech-bubble {
+  width: 350px; 
+  height: auto;
+  transform: scaleX(-1);
+  z-index: 10; 
+  top: 80px;
+}
+
+.speech-container {
+    position: absolute;
+    top: 90px;
+    left: 180px; 
+    width: 350px; 
+    height: auto;
+    z-index: 10; 
+}
+
+.speech-bubble {
+    width: 100%; 
+    transform: scaleX(-1);
+}
+
+.speech-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;
+    color: black; 
+}
+
+
+
+.anime-image {
+  width: 600px; 
+  height: auto;
+  flex-shrink: 0; 
+  position: absolute;
+  top: 150px; 
+  left: -100px;   
+  z-index: 9;
+}
+
+/* about me text box */
+.text-box {
+  position: absolute;
+  top: 200px;  
+  left: 200px;  
+  width: 1250px;
+  height: 200px;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 3px;
+
+}
+
+
+
+.boxes {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 1100px; 
+  height: 250px;
+  top: 450px;
+  left: 350px;
+  gap: 45px;
+
+}
+
+/* right box */
+.normal-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 580px;
+  height: 100%;
+  background: white;
+  border: 3px solid black;
+  overflow: hidden;
+  border-radius: 3px;
+  padding: 20px; 
+
+
+}
+
+.slanted-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 580px;
+  height: 100%;
+  background: white;
+  border: 3px solid black;
+  overflow: hidden;
+  border-radius: 3px;
+  padding: 20px; 
+}
+
+
+.box-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.github-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.github-button:hover {
+  background-color: rgb(219, 171, 190);
+}
+
+.LinkedIn-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.LinkedIn-button:hover {
+  background-color: rgb(219, 171, 190);
+}
+
+#github-btn {
+  border: 2px solid rgb(207, 249, 209); 
+}
+
+#linkedin-btn {
+  border: 2px solid #0077B5;
+}
+
